@@ -4,6 +4,7 @@ public class Item {
 
         private String name;
         private double price;
+        private int index;
 
         public Item(){}
 
@@ -27,6 +28,15 @@ public class Item {
 
         public void setPrice(double price) {
                 this.price = price;
+        }
+
+        //Added a method to set the index of the item
+        public int getIndex() {
+                return this.index;
+        }
+
+        public void setIndex(int index) {
+                this.index = index;
         }
 
 

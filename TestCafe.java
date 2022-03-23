@@ -2,57 +2,66 @@ import java.util.*;
 public class TestCafe {
 
     public static void main(String[] args) {
+
+        OrderKiosk dojoKiosk = new OrderKiosk();
+
+        dojoKiosk.addMenuItem("Coffee", 2.50);
+        dojoKiosk.addMenuItem("Cappuccino", 9.95);
+        dojoKiosk.addMenuItem("Latte", 6.95);
+        dojoKiosk.addMenuItem("Espresso", 5.95);
+
+        dojoKiosk.newOrder();
         
 
         // Create Items from the Item class 
 
-        Item item1 = new Item("Cappuccino", 9.95);
-        Item item2 = new Item("latte", 8.25);
-        Item item3 = new Item("mocha", 7.50);
-        Item item4 = new Item("black coffee", 5.00);
+        // Item item1 = new Item("Cappuccino", 9.95);
+        // Item item2 = new Item("latte", 8.25);
+        // Item item3 = new Item("mocha", 7.50);
+        // Item item4 = new Item("black coffee", 5.00);
 
 
-        // Create 2 orders for guests with out a name
+        // // Create 2 orders for guests with out a name
 
-        Order order1 = new Order();
-        Order order2 = new Order();
+        // Order order1 = new Order();
+        // Order order2 = new Order();
 
-        // Create 3 orders using the overloaded constuctor to give names for each order 
-        Order order3 = new Order("Billy");
-        Order order4 = new Order("Dana");
-        Order order5 = new Order("Tommy");
+        // // Create 3 orders using the overloaded constuctor to give names for each order 
+        // Order order3 = new Order("Billy");
+        // Order order4 = new Order("Dana");
+        // Order order5 = new Order("Tommy");
 
 
-        // Add items to each of the orders
+        // // Add items to each of the orders
 
-        order1.addItem(item1);
-        order2.addItem(item4);
+        // order1.addItem(item1);
+        // order2.addItem(item4);
 
-        System.out.println(order1.getStatusMessage());
+        // System.out.println(order1.getStatusMessage());
 
-        order2.addItem(item3);
-        order4.addItem(item4);
-        order5.addItem(item1);
-        order3.addItem(item2);
-        order4.addItem(item2);
-        order2.addItem(item1);
+        // order2.addItem(item3);
+        // order4.addItem(item4);
+        // order5.addItem(item1);
+        // order3.addItem(item2);
+        // order4.addItem(item2);
+        // order2.addItem(item1);
         
-        order1.setReady(true);
-        order3.setReady(true);
-        order5.setReady(true);
+        // order1.setReady(true);
+        // order3.setReady(true);
+        // order5.setReady(true);
 
-        order2.display();
-        order4.display();
-        order5.display();
+        // order2.display();
+        // order4.display();
+        // order5.display();
     
 
-        System.out.println(order3.getStatusMessage());
-        System.out.println(order5.getStatusMessage());
-        System.out.println(order1.getStatusMessage());
+        // System.out.println(order3.getStatusMessage());
+        // System.out.println(order5.getStatusMessage());
+        // System.out.println(order1.getStatusMessage());
 
-        order1.display();
+        // order1.display();
 
-        System.out.println(order2.getOrderTotal());
+        // System.out.println(order2.getOrderTotal());
 
 
 
